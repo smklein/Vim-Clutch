@@ -26,6 +26,7 @@ THE SOFTWARE.
 #include <errno.h>
 #include <unistd.h>
 #include <libusb-1.0/libusb.h>
+//#include "main.c"
 #include "common.h"
 #include "debug.h"
 

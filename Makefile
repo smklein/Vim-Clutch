@@ -9,10 +9,10 @@ all: $(PROGNAME)
 $(PROGNAME): $(PROGNAME).c common.h common.c debug.h debug.c
     $(CC) $(PROGNAME).c common.c debug.c -o $(PROGNAME) $(CFLAGS) $(LDFLAGS)
 
+
 install: all
     $(INSTALL) $(PROGNAME) /usr/bin
     $(INSTALLDATA) 19-footswitch.rules /etc/udev/rules.d
 
-clean:
-    rm -f $(PROGNAME) *.o
+clean: rm -f $(PROGNAME) *.o
 
